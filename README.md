@@ -23,7 +23,7 @@ A route planning application, integrating weather forecasting for better decisio
 
 ### Packages
 
-- [vite-React]
+- [vite-React]()
 - [material-ui](https://material-ui.com/) - Google's Material Design in easy to use React components
 - [Leaflet](https://leafletjs.com/) - Map function to display running routes
 - [GpxParser](https://www.npmjs.com/package/gpxparser) - conversion of GPX files to longitude and latitude coordinates
