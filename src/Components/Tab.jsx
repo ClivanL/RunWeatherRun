@@ -82,13 +82,13 @@ export default function BasicTabs() {
           <Tab label="Item Two" {...a11yProps(1)} />
           <Tab label="Item Three" {...a11yProps(2)} /> */}
           {gpxMaps.map((x, index) => {
-            return <Tab label={x.description} {...a11yProps(index)} />;
+            return <Tab key={index} label={x.description} {...a11yProps(index)} />;
           })}
         </Tabs>
       </Box>
       {gpxMaps.map((x, index) => {
         return (
-          <TabPanel value={value} index={index}>
+          <TabPanel key={x.route} value={value} index={index}>
             <h1>{x.description}</h1>
             <MapContainer
             center={[findCenter(x.route).lat, findCenter(x.route).long]}

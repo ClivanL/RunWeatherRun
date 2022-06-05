@@ -20,7 +20,7 @@ function MapPlot(){
         <Navbar/>
         <h2>Routes selected to be plotted</h2>
         {context.favsRoutes.map((x)=>{
-            return <p>{x.description}:{x.location}:{x.distance}km</p>
+            return <p key={x.description}>{x.description},{x.location}:{x.distance}km</p>
         })}
         <MapContainer center={[1.3521, 103.8198]} zoom={13} scrollWheelZoom={false}>
     <TileLayer
@@ -30,7 +30,7 @@ function MapPlot(){
     <Marker position={[1.3521, 103.8198]}>
     </Marker>
     {gpxMaps.map((x)=>{
-        return     <Polyline
+        return     <Polyline key={x}
         pathOptions={{ fillColor: 'red', color: 'blue' }}
         positions={x}
     />

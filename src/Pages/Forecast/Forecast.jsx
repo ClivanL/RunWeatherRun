@@ -59,7 +59,7 @@ const [location, setLocation]=useState("");
         <h6>Forecast Validity period: {location?.items?.[0]?.valid_period?.start} - {location?.items?.[0]?.valid_period?.end} </h6>
         <div className="personal-location">
         {location?.items?.[0]?.forecasts?.map((x)=>{
-                return <ActionAreaCard legend={x.area} text={x.forecast} images={images}/>
+                return <ActionAreaCard key={x.area} legend={x.area} text={x.forecast} images={images}/>
             })}
         </div>
 
