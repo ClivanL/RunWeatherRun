@@ -1,4 +1,4 @@
-# RunWeather-app
+# RunWeather
 
 ![Image of screenshot nutrition-app](https://i.imgur.com/SSiGiER.jpg)
 
