@@ -78,6 +78,7 @@ const [place, setPlace] = useState(""); //user's exact location, postal code, st
 ## Sads:
 - Did plan, but plan didn't materialise due to API issues
 - Plan was not comprehensive enough to allow for adding in additional features, adding more features required shifting state declarations in the different levels
+- Passing down values from parent to child components was inconsistent, passing down props, useContext
 
 ## How I could have done better:
 - Plan better, define re-usable functions earlier and export them, have functions that are less specific so that they are reusable
