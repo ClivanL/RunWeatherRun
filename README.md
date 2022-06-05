@@ -71,16 +71,16 @@ const [place, setPlace] = useState(""); //user's exact location, postal code, st
 ```
 
 ## Glads:
--Managed to get the application running
--Utilised external libraries (Maps), Material UI and managed to put them to some use
--Able to fetch data, chain API fetches
+- Managed to get the application running
+- Utilised external libraries (Maps), Material UI and managed to put them to some use
+- Able to fetch data, chain API fetches
 
 ## Sads:
--Did plan, but plan didn't materialise due to API issues
--Plan was not comprehensive enough to allow for adding in additional features, adding more features required shifting state declarations in the different levels
+- Did plan, but plan didn't materialise due to API issues
+- Plan was not comprehensive enough to allow for adding in additional features, adding more features required shifting state declarations in the different levels
 
 ## How I could have done better:
--Plan better, define re-usable functions earlier and export them, have functions that are less specific so that they are reusable
+- Plan better, define re-usable functions earlier and export them, have functions that are less specific so that they are reusable
 
 ## Credits
 - Rendering GPX tracks in React(https://www.manuelkruisz.com/blog/posts/gpx-maps-react),
