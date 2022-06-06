@@ -108,15 +108,6 @@ export default function BasicTabs() {
           </TabPanel>
         );
       })}
-      {/* <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel> */}
     </Box>
   );
 }

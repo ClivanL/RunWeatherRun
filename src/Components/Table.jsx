@@ -36,11 +36,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 export default function CustomizedTables({runningroutes, handleAdd, favsRoutes, location}) {
-  // console.log(runningroutes[0].route);
-  // console.log(convertToCoordinates(runningroutes[0].route))
-  // console.log (findCenter(convertToCoordinates(runningroutes[0].route)))
-  // console.log({"LATITUDE":findCenter(convertToCoordinates(runningroutes[0].route)).lat, "LONGTITUDE":findCenter(convertToCoordinates(runningroutes[0].route)).long})
-  // console.log(location?.area_metadata)
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">

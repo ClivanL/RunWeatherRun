@@ -6,22 +6,21 @@ import {useNavigate} from 'react-router-dom'
 import CustomizedTables from "../../Components/Table";
 import { Button } from '@mui/material'
 import DeleteSweepIcon from '@mui/icons-material/DeleteSweep';
+import useLocation from '../../hooks/useLocation'
 
-function ListOfTracks({location}){
+function ListOfTracks(){
     const context=useContext(FavsRoutes);
     const navigate=useNavigate();
-    // console.log(location);
 
 function handleAdd(newRoute){
-    // console.log("added");
-    // console.log(newRoute);
     context.setFavsRoutes([...context.favsRoutes,newRoute]);
 }
 
 function handleMap(){
-    // console.log("clickmap");
     navigate("/listoftracks/mapplot")
 }
+
+const location=useLocation();
 
     return(
         <>

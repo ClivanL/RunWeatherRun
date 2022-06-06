@@ -3,7 +3,6 @@ import {useContext} from 'react'
 import {FavsRoutes} from '../../App'
 import GpxParser from 'gpxparser'
 import 'leaflet/dist/leaflet.css'
-import { useMap } from 'react-leaflet/hooks'
 import { MapContainer, Polyline, TileLayer, Marker, Popup} from 'react-leaflet'
 
 
@@ -14,7 +13,6 @@ function MapPlot(){
     gpx.parse(x.route);
     return gpx.tracks[0].points.map(p => [p.lat, p.lon])   
     })
-    // console.log(gpxMaps);
     return (
         <>
         <Navbar/>
