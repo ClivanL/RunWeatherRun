@@ -5,8 +5,19 @@ import Navbar from '../../Components/Navbar'
 import useLocation from '../../hooks/useLocation'
 
 function Forecast({images}){
-      const location=useLocation();
-
+      // const location=useLocation();
+      const [location, setLocation]=useState("")
+      useEffect(() => {
+          fetch(
+            `https://api.data.gov.sg/v1/environment/2-hour-weather-forecast?date_time=${DateTime.now()
+              .setZone("Asia/Singapore")
+              .set({ milliseconds: 0 })
+              .toISO({ includeOffset: false, suppressMilliseconds: true })}`
+          )
+            .then((response) => response.json())
+      
+            .then((data) => setLocation(data));
+        }, []);
     return (
         <>
         <Navbar/>
