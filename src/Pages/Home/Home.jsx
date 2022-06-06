@@ -30,7 +30,7 @@ function Home({images,location,setLocation}) {
     }
     // console.log(navigator);
     navigator.geolocation.getCurrentPosition(function (position) {
-        console.log("Latitude is :", position.coords.latitude);
+        // console.log("Latitude is :", position.coords.latitude);
       setLonglat({
         lat: position.coords.latitude,
         long: position.coords.longitude,
