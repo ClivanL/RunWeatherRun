@@ -85,3 +85,5 @@ const [place, setPlace] = useState(""); //user's exact location, postal code, st
 
 ## Credits
 - Rendering GPX tracks in React(https://www.manuelkruisz.com/blog/posts/gpx-maps-react),
+- Thanks to Simon and the TAs- Joseph and Sharlyn for the support throughout the lessons, bug fixes and inspiration
+- Coursemates and study buddies for the support and late nights on discord
