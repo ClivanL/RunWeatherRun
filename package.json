@@ -12,6 +12,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.2",
     "@mui/material": "^5.8.2",
+    "dotenv": "^16.0.1",
     "gpxparser": "^3.0.8",
     "leaflet": "^1.8.0",
     "luxon": "^2.4.0",

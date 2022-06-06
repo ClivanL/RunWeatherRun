@@ -14,6 +14,8 @@ import Navbar from "../../Components/Navbar";
 import ActionAreaCard from "../../Components/Card";
 import compareNearest from "../../Functions/compareNearest";
 
+const API_KEY = import.meta.env.VITE_API_KEY
+
 
 function Home({images,location,setLocation}) {
   
@@ -41,7 +43,7 @@ function Home({images,location,setLocation}) {
         .then((res) => res.json())
         .then((data) =>
           fetch(
-            `https://developers.onemap.sg/privateapi/commonsvc/revgeocodexy?location=${data.X},${data.Y}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjg4MjAsInVzZXJfaWQiOjg4MjAsImVtYWlsIjoiY2xpdmFuOTNAZ21haWwuY29tIiwiZm9yZXZlciI6ZmFsc2UsImlzcyI6Imh0dHA6XC9cL29tMi5kZmUub25lbWFwLnNnXC9hcGlcL3YyXC91c2VyXC9zZXNzaW9uIiwiaWF0IjoxNjU0MzE2ODI2LCJleHAiOjE2NTQ3NDg4MjYsIm5iZiI6MTY1NDMxNjgyNiwianRpIjoiMzRkMTQ4NDhmNjE0YWMyZjJkYjc5MzUxNDU1NGNlM2QifQ.bYu2d9o4bIJlYrnbdjhtKdIc-kJ7cq7Wai3qQ8uWytU`
+            `https://developers.onemap.sg/privateapi/commonsvc/revgeocodexy?location=${data.X},${data.Y}&token=${API_KEY}`
           )
             .then((response) => response.json())
 
