@@ -1,7 +1,7 @@
 const compareNearest = (cityDetails, position) => {
     let addCity = cityDetails.map((x) => {
       return Math.sqrt(
-        (x.label_location.longitude - position.LONGTITUDE) ** 2 +
+        (x.label_location.longitude - position.LONGITUDE) ** 2 +
           (x.label_location.latitude - position.LATITUDE) ** 2
       );
     });

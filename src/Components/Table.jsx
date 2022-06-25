@@ -57,7 +57,7 @@ export default function CustomizedTables({runningroutes, handleAdd, favsRoutes, 
               </StyledTableCell>
               <StyledTableCell align="right">{row.location}</StyledTableCell>
               <StyledTableCell align="right">{row.distance}</StyledTableCell>
-              <StyledTableCell align="right">{location?.items?.[0]?.forecasts?.[compareNearest(location?.area_metadata,{"LATITUDE":findCenter(convertToCoordinates(row.route)).lat,"LONGTITUDE":findCenter(convertToCoordinates(row.route)).long})]?.forecast}</StyledTableCell>
+              <StyledTableCell align="right">{location?.items?.[0]?.forecasts?.[compareNearest(location?.area_metadata,{"LATITUDE":findCenter(convertToCoordinates(row.route)).lat,"LONGITUDE":findCenter(convertToCoordinates(row.route)).long})]?.forecast}</StyledTableCell>
               <StyledTableCell align="right"><EngineeringSharpIcon/>Function for the future</StyledTableCell>
               <StyledTableCell align="right">{favsRoutes.indexOf(row)!==-1?<Button variant="contained" style={{background:"green"}} onClick={()=>handleAdd(row)}>Added</Button>:<Button variant="contained" onClick={()=>handleAdd(row)} startIcon={<MapIcon />}>
   Add to map!
