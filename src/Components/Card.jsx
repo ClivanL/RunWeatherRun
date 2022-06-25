@@ -9,7 +9,7 @@ import { CardActionArea } from '@mui/material';
 export default function ActionAreaCard({legend, text, images}) {
   // console.log("action area card",images);
   return (
-    <Card sx={{ width: 200 }}>
+    <Card sx={{ width: 150 }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -21,7 +21,7 @@ export default function ActionAreaCard({legend, text, images}) {
           <Typography gutterBottom variant="h5" component="div">
             {legend}
           </Typography>
-          <Typography variant="body2" color="black">
+          <Typography variant="body" color="black">
            {text}
           </Typography>
         </CardContent>
