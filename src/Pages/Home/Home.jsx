@@ -14,7 +14,6 @@ import compareNearest from "../../Functions/compareNearest";
 import useLocation from '../../hooks/useLocation'
 
 const API_KEY = import.meta.env.VITE_API_KEY
-//add to update vercel
 
 function Home({images}) {
   
