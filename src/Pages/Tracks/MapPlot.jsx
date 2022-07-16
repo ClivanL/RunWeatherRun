@@ -4,7 +4,6 @@ import {FavsRoutes} from '../../App'
 import GpxParser from 'gpxparser'
 import 'leaflet/dist/leaflet.css'
 import { MapContainer, Polyline, TileLayer, Marker, Popup} from 'react-leaflet'
-///
 
 function MapPlot(){
     const context=useContext(FavsRoutes);
