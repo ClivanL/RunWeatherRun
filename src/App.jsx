@@ -10,7 +10,7 @@ import Forecast from './Pages/Forecast/Forecast'
 import images from './images'
 
 export const FavsRoutes = createContext();
-
+//
 function App() {
 const [favsRoutes,setFavsRoutes]=useState([]);
 
